@@ -26,12 +26,13 @@ except Exception as e:
     print(f"\nAn exception raised:", e)
 
 while True:
-    menu_opt = input(f"\n1 - Visualize a price\n2 - VERIFY the generated token\n3 - LIST all the Tokens generated (JSON)\n4 - LIST all the Tokens generated (IDs)\n5 - REVOKE one token\n6 - REVOKE all tokens\n0 - EXIT\n\nSelect your option: ")
+    menu_opt = input(f"\n1 - Visualize a price\n2 - Compare price\n3 - LIST all the Tokens generated (JSON)\n4 - LIST all the Tokens generated (IDs)\n5 - REVOKE one token\n6 - REVOKE all tokens\n0 - EXIT\n\nSelect your option: ")
     
     match menu_opt:
         case "1":
             visualize_price(auth)
-        
+        case "2":
+            price_change(auth)
         case "0":
             print(f"\nGoodbye!")
             break
