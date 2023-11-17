@@ -34,6 +34,6 @@ def write_data(crypto:str, data:str, currency:str)->None:
     with open(file_path, "a") as csv_recap:
         today = datetime.datetime.now().strftime("%d-%m-%y")
         writer = csv.writer(csv_recap)
-        writer.writerow([crypto, f"{data[crypto][currency]: .1f}", [currency], today])
+        writer.writerow([crypto, f"{data[crypto][currency]: .1f}", currency, today])
         time.sleep(2)
         csv_recap.close()
