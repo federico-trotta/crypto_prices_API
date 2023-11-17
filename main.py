@@ -2,6 +2,7 @@ import datetime
 import requests
 from settings import settings
 from functions.price import *
+from functions.csv_creation import *
 
 # Software versione
 version = "v1.0"
@@ -12,7 +13,7 @@ token = settings.API_TOKEN
 auth = (email + "/token", token) # Create authenticator
 
 # Print welcome
-print(f"\nWelcome to 'GetCryptos' by Federico Trotta. This is version {version} for the year {datetime.date.today().year}. \nPlease: wait while I verify the prerequisites...")
+print(f"\nWelcome to 'GetCryptos' by Federico Trotta. This is version {version} created in the year {datetime.date.today().year}. \nPlease: wait while I verify the prerequisites...")
 
 # Try access by pinging the dedicated URL
 try:
@@ -26,12 +27,14 @@ except Exception as e:
     print(f"\nAn exception raised:", e)
 
 while True:
-    menu_opt = input(f"\n1 - Visualize a price\n2 - Compare price\n3 - LIST all the Tokens generated (JSON)\n4 - LIST all the Tokens generated (IDs)\n5 - REVOKE one token\n6 - REVOKE all tokens\n0 - EXIT\n\nSelect your option: ")
+    menu_opt = input(f"\n1 - Visualize a price\n2 - Compare price\n0 - Exit program\n\nSelect your option: ")
     
     match menu_opt:
         case "1":
+            # Visualize the price of one crypto
             visualize_price(auth)
         case "2":
+            # Compare the change in price of a crypto
             price_change(auth)
         case "0":
             print(f"\nGoodbye!")
