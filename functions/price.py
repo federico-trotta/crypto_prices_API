@@ -1,12 +1,10 @@
 import requests
-import datetime
-import csv
-import time
-import os
 from functions.csv_creation import *
 
 def visualize_price(auth:str)->None:
-    """Shows the current price of a crypto with respect to a currency"""
+    """Shows the current price of a crypto with respect to a currency.
+    The auth variable is created in the main.py file.
+    """
      # User inserts crypto and currency
     crypto = input(f"\nChoose your crypto (for example, write 'bitcoin'):\n")
     currency = input(f"Choose the currency (for example, write 'usd'):\n")
@@ -42,7 +40,9 @@ def visualize_price(auth:str)->None:
             
 
 def price_change(auth:str)->None:
-    '''Shows the difference of the price of a crypto in a currency with respect to the value it had yesterday'''
+    '''Shows the difference of the price of a crypto in a currency with respect to the value it had yesterday.
+    The auth variable is created in the main.py file.
+    '''
 
     # User inserts crypto and currency
     crypto = input(f"\nChoose your crypto (for example, write 'bitcoin'):\n")
@@ -63,6 +63,6 @@ def price_change(auth:str)->None:
         else:
             print(f"An error occurred while getting the price: please, try again!")
     except Exception as e:
-        print(f"An exception occurre while trying to get the currency value", e)
+        print(f"An exception occurred while trying to get the currency value", e)
 
 
