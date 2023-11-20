@@ -22,19 +22,19 @@ try:
     if response.status_code == 200:
         print(f"\nAccess succesfully granted to the API!")
     else:
-        print(f"\nAn error occurred while auteenticating. Please: try again!")
+        print(f"\nAn error occurred while autenticating. Please: try again!")
 except Exception as e:
-    print(f"\nAn exception raised:", e)
+    print(f"\nAn exception occurred:", e)
 
 while True:
-    menu_opt = input(f"\n1 - Visualize a price\n2 - Compare price\n0 - Exit program\n\nSelect your option: ")
+    menu_opt = input(f"\n1 - Visualize a price\n2 - Compare prices\n0 - Exit program\n\nSelect your option: ")
     
     match menu_opt:
         case "1":
             # Visualize the price of one crypto
             visualize_price(auth)
         case "2":
-            # Compare the change in price of a crypto
+            # Compare the change in price of a crypto with respect to yesterday
             price_change(auth)
         case "0":
             print(f"\nGoodbye!")

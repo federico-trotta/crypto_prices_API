@@ -2,7 +2,7 @@ import os
 
 def generate_settings():
     '''Asks the user to insert their email and API token.
-    Then, it stores these data in the settings.py file.
+    Then, it stores these data in the 'settings.py' file.
     If the file doesn't exists, it creates it.
     '''
     # Insert user email
