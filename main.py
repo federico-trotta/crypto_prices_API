@@ -26,6 +26,7 @@ try:
 except Exception as e:
     print(f"\nAn exception occurred:", e)
 
+# Main meù
 while True:
     menu_opt = input(f"\n1 - Visualize a price\n2 - Compare prices\n0 - Exit program\n\nSelect your option: ")
     
