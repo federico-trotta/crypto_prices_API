@@ -24,7 +24,7 @@ def visualize_price(auth:str)->None:
             user_answer = input(f"\nWould you like to store the data in the CSV? [y,n]:\n")
 
             if user_answer == "y":
-                # Create CSV if doesn't exist
+                # Create CSV if it doesn't exist
                 new_csv()
 
                 # Write data on CSV
