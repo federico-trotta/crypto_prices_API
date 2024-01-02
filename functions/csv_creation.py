@@ -5,7 +5,7 @@ import datetime
 
 
 def new_csv()->None:
-    '''Creates the recap CSV file if it does not exist'''
+    '''This function creates the recap CSV file if it does not exist'''
     # Current folder
     folder = os.getcwd()
 
@@ -26,8 +26,11 @@ def new_csv()->None:
             recap_file.close()
 
 def write_data(crypto:str, data:str, currency:str)->None:
-    '''Writes the crypto selected by the user, its value in the currency selected by the user, the currency, and today's date in the recap CSV.
-    The crypto and currency variables are selected by the user in the main.py file.
+    '''This function writes the crypto selected by the user, its value in the currency selected by the user, the currency, and today's date in the recap CSV.\n
+
+    The crypto and currency variables are selected by the user in the main.py file./n
+
+    **NOTE**: crypto, data, and currency are created in the `price.py` module.
     '''
     # Current folder
     folder = os.getcwd()

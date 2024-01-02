@@ -1,9 +1,11 @@
 import os
 
 def generate_settings():
-    '''Asks the user to insert their email and API token.
-    Then, it stores these data in the 'settings.py' file.
-    If the file doesn't exists, it creates it.
+    '''This function asks the user to insert their email and API token.\n
+
+    Then, it stores these data in the `settings.py` file.\n
+    
+    If the `settings.py`  doesn't exists, it creates it.
     '''
     # Insert user email
     email = input(f"\nPlease, insert your email:\n")
