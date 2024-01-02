@@ -1,4 +1,4 @@
-# Initial file
+# The initial file
 
 ```{eval-rst} 
 .. automodule:: initial

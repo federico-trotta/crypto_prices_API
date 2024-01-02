@@ -1,4 +1,3 @@
-
 # Welcome to CoinGecko API project's documentation!
 
 
@@ -10,3 +9,4 @@ initial
 main
 modules
 ```
+

@@ -1,6 +1,6 @@
-# The modules
+# Functions
 
-The documentation of the modules.
+The functions developed as modules.
 
 ***
 

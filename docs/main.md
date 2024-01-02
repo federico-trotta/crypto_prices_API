@@ -1,4 +1,4 @@
-# Main file
+# The main file
 
 ```{literalinclude} ../main.py
 ```
