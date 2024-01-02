@@ -134,7 +134,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
         <div class="visually-hidden">Toggle table of contents sidebar</div>
         <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
       </label>
@@ -187,7 +187,7 @@
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
             <div class="visually-hidden">Toggle table of contents sidebar</div>
             <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
           </label>
@@ -195,6 +195,35 @@
         <article role="main">
           <section id="the-main-file">
 <h1>The main file<a class="headerlink" href="#the-main-file" title="Link to this heading">#</a></h1>
+<section id="structure-of-the-main-file">
+<h2>Structure of the main file<a class="headerlink" href="#structure-of-the-main-file" title="Link to this heading">#</a></h2>
+<p>After the first usage, always invoke the main file via:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="n">python3</span> <span class="n">main</span><span class="o">.</span><span class="n">py</span>
+</pre></div>
+</div>
+<p>Here’s what it does:</p>
+<ol class="arabic simple">
+<li><p>It imports the email and the API token from the <code class="docutils literal notranslate"><span class="pre">settings.py</span></code> file.</p></li>
+<li><p>It prints a welcome message reporting the version of the software.</p></li>
+<li><p>It tries to authenticate the user.</p></li>
+<li><p>With a <code class="docutils literal notranslate"><span class="pre">while</span></code> loop, it has a menù that gives the user to choose between three options:</p>
+<ul class="simple">
+<li><p><strong>Option 1</strong>: the user can visualize the price of one crypto in a currency of their choice. Also, the user can choose to store the value of the crypto in a CVS file with the current date.</p></li>
+<li><p><strong>Option 2</strong>: the user can visualize the difference between today’s and yesterday’s price of a crypto.</p></li>
+<li><p><strong>Option 0</strong>: it closes the program by breaking the loop.</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="using-the-main-file">
+<h2>Using the main file<a class="headerlink" href="#using-the-main-file" title="Link to this heading">#</a></h2>
+<p>The main file is built as a menu with two options:</p>
+<ul class="simple">
+<li><p>Option 1 writes the current value of a crypto and stores its value in the CVS, if the user wants-</p></li>
+<li><p>Option 2 prints the difference in the value of a crypto between today and yesterday.</p></li>
+</ul>
+<hr class="docutils" />
+<p>Let’s see the actual code:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">datetime</span>
 <span class="kn">import</span> <span class="nn">requests</span>
 <span class="kn">from</span> <span class="nn">settings</span> <span class="kn">import</span> <span class="n">settings</span>
@@ -242,6 +271,7 @@
 </pre></div>
 </div>
 </section>
+</section>
 
         </article>
       </div>
@@ -286,8 +316,28 @@
         
       </footer>
     </div>
-    <aside class="toc-drawer no-toc">
+    <aside class="toc-drawer">
       
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">The main file</a><ul>
+<li><a class="reference internal" href="#structure-of-the-main-file">Structure of the main file</a></li>
+<li><a class="reference internal" href="#using-the-main-file">Using the main file</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
       
       
     </aside>

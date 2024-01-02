@@ -202,14 +202,15 @@
 <dl class="py function">
 <dt class="sig sig-object py" id="functions.csv_creation.new_csv">
 <span class="sig-prename descclassname"><span class="pre">functions.csv_creation.</span></span><span class="sig-name descname"><span class="pre">new_csv</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="_modules/functions/csv_creation.html#new_csv"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#functions.csv_creation.new_csv" title="Link to this definition">#</a></dt>
-<dd><p>Creates the recap CSV file if it does not exist</p>
+<dd><p>This function creates the recap CSV file if it does not exist</p>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="functions.csv_creation.write_data">
 <span class="sig-prename descclassname"><span class="pre">functions.csv_creation.</span></span><span class="sig-name descname"><span class="pre">write_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">crypto</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">currency</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="_modules/functions/csv_creation.html#write_data"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#functions.csv_creation.write_data" title="Link to this definition">#</a></dt>
-<dd><p>Writes the crypto selected by the user, its value in the currency selected by the user, the currency, and today’s date in the recap CSV.
-The crypto and currency variables are selected by the user in the main.py file.</p>
+<dd><p>This function writes the crypto selected by the user, its value in the currency selected by the user, the currency, and today’s date in the recap CSV.</p>
+<p>The crypto and currency variables are selected by the user in the main.py file./n</p>
+<p><strong>NOTE</strong>: crypto, data, and currency are created in the <cite>price.py</cite> module.</p>
 </dd></dl>
 
 </section>
@@ -218,15 +219,15 @@ The crypto and currency variables are selected by the user in the main.py file.<
 <dl class="py function">
 <dt class="sig sig-object py" id="functions.price.price_change">
 <span class="sig-prename descclassname"><span class="pre">functions.price.</span></span><span class="sig-name descname"><span class="pre">price_change</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">auth</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="_modules/functions/price.html#price_change"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#functions.price.price_change" title="Link to this definition">#</a></dt>
-<dd><p>Shows the difference of the price of a crypto in a currency with respect to the value it had yesterday.
-The auth variable is created in the main.py file.</p>
+<dd><p>This functions hows the difference of the price of a crypto in a currency with respect to the value it had yesterday.</p>
+<p><strong>NOTE</strong>: The auth variable is created in the <cite>main.py</cite> file.</p>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="functions.price.visualize_price">
 <span class="sig-prename descclassname"><span class="pre">functions.price.</span></span><span class="sig-name descname"><span class="pre">visualize_price</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">auth</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="_modules/functions/price.html#visualize_price"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#functions.price.visualize_price" title="Link to this definition">#</a></dt>
-<dd><p>Shows the current price of a crypto with respect to a currency.
-The auth variable is created in the main.py file.</p>
+<dd><p>This function shows the current price of a crypto with respect to a currency.</p>
+<p><strong>NOTE</strong>: The auth variable is created in the <cite>main.py</cite> file.</p>
 </dd></dl>
 
 </section>

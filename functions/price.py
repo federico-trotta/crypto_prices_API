@@ -2,8 +2,9 @@ import requests
 from functions.csv_creation import *
 
 def visualize_price(auth:str)->None:
-    """Shows the current price of a crypto with respect to a currency.
-    The auth variable is created in the main.py file.
+    """This function shows the current price of a crypto with respect to a currency.\n
+
+    **NOTE**: The auth variable is created in the `main.py` file.
     """
      # User inserts crypto and currency
     crypto = input(f"\nChoose your crypto (for example, write 'bitcoin'):\n")
@@ -40,8 +41,9 @@ def visualize_price(auth:str)->None:
             
 
 def price_change(auth:str)->None:
-    '''Shows the difference of the price of a crypto in a currency with respect to the value it had yesterday.
-    The auth variable is created in the main.py file.
+    '''This functions hows the difference of the price of a crypto in a currency with respect to the value it had yesterday.\n
+
+    **NOTE**: The auth variable is created in the `main.py` file.
     '''
 
     # User inserts crypto and currency

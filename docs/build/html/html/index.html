@@ -134,7 +134,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
         <div class="visually-hidden">Toggle table of contents sidebar</div>
         <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
       </label>
@@ -187,7 +187,7 @@
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
             <div class="visually-hidden">Toggle table of contents sidebar</div>
             <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
           </label>
@@ -197,6 +197,47 @@
 <h1>Welcome to CoinGecko API project’s documentation!<a class="headerlink" href="#welcome-to-coingecko-api-project-s-documentation" title="Link to this heading">#</a></h1>
 <div class="toctree-wrapper compound">
 </div>
+<p>This documentation describes a use case for the CoinGecko API.<br />
+<br />
+This use case has been developed by me in Python and the full code is on my <a class="reference external" href="https://github.com/federico-trotta/crypto_prices_API">GitHub</a>.</p>
+<section id="prerequisites">
+<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Link to this heading">#</a></h2>
+<p>To use the CoinGecko API you first need to create an account on <a class="reference external" href="https://www.coingecko.com/">their website</a>.<br />
+<br />
+Then, you need to create an <a class="reference external" href="https://apiguide.coingecko.com/getting-started/getting-started">API token</a>. The <a class="reference external" href="https://www.coingecko.com/en/api/pricing">free plan</a> currently allows you to make 10k API calls per month.</p>
+</section>
+<section id="requirements">
+<h2>Requirements<a class="headerlink" href="#requirements" title="Link to this heading">#</a></h2>
+<p>The program uses the <code class="docutils literal notranslate"><span class="pre">match</span></code> statement that, and, at the time of writing this documentation (November 2023), this requires <code class="docutils literal notranslate"><span class="pre">Python</span> <span class="pre">3.10</span></code> (or newer versions).<br />
+<br />
+As the program calls an API, you also need the <code class="docutils literal notranslate"><span class="pre">requests</span></code> library. You can install it via:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="n">pip</span> <span class="n">install</span> <span class="n">requests</span>
+</pre></div>
+</div>
+</section>
+<section id="getting-started">
+<h2>Getting started<a class="headerlink" href="#getting-started" title="Link to this heading">#</a></h2>
+<p>When you use this software you need to launch the <code class="docutils literal notranslate"><span class="pre">initial.py</span></code> file via:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="n">python3</span> <span class="n">initial</span><span class="o">.</span><span class="n">py</span>
+</pre></div>
+</div>
+<p>This will create a file, called <code class="docutils literal notranslate"><span class="pre">settings.py</span></code>, which stores your email and your API token: this way, every time you use this software, you won’t need to insert them.<br />
+<br />
+After that, you can launch the main file via:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="n">python3</span> <span class="n">main</span><span class="o">.</span><span class="n">py</span>
+</pre></div>
+</div>
+<p>Here’s how the <code class="docutils literal notranslate"><span class="pre">initial.py</span></code> file works (code reference <a class="reference external" href="https://github.com/federico-trotta/crypto_prices_API/blob/main/initial.py">here</a>):</p>
+<ul class="simple">
+<li><p>The user inserts the email and the API KEY via CLI.</p></li>
+<li><p>The program checks if the <code class="docutils literal notranslate"><span class="pre">settings.py</span></code> file exists in the settings folder, then:</p>
+<ul>
+<li><p>If exists, it warns the user that the file already exists.</p></li>
+<li><p>If it doesn’t exist, it creates it and stores the email and the API KEI inserted by the user.</p></li>
+</ul>
+</li>
+</ul>
+</section>
 </section>
 
         </article>
@@ -232,8 +273,29 @@
         
       </footer>
     </div>
-    <aside class="toc-drawer no-toc">
+    <aside class="toc-drawer">
       
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Welcome to CoinGecko API project’s documentation!</a><ul>
+<li><a class="reference internal" href="#prerequisites">Prerequisites</a></li>
+<li><a class="reference internal" href="#requirements">Requirements</a></li>
+<li><a class="reference internal" href="#getting-started">Getting started</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
       
       
     </aside>
