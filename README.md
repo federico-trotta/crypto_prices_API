@@ -1,4 +1,15 @@
 # Getting crypto prices through CoinGecko
-This project gets the proce of the cryptos using the [CoinGecko API](https://www.coingecko.com/).
+![Crypto prices by Federico Trotta](img/crypto_price.png)
 
-The documentation of this project is in [my portfolio](https://federico-trotta.gitbook.io/federico-trottas-portfolio/my-portfolio/api-documentation/coingecko-api-getting-crypto-values)
+(The price of a crypto created by Federico Trotta with AI)
+
+This project gets the price of the cryptos using the [CoinGecko API](https://www.coingecko.com/).
+
+The documentation of this project is in [my portfolio](https://federico-trotta.github.io/api_documentation.html#coingecko-api-getting-crypto-values)
+
+## About Federico Trotta
+![Foto od Federico Trotta](img/Federico_Trotta.png)
+
+Hi, my name is Federico Trotta and I am a freelance Technical Writer.
+
+Do you want to collaborate with me? [Contact me to hire me](https://bio.link/federicotrotta)!
